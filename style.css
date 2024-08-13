@@ -67,27 +67,27 @@ header{
  
  /* hero section  */
  
- .hero-main-container{
+ .fitness-main-container{
      width: 80%;
      margin: 0 auto;
      display: flex; 
      justify-content: center;
      gap: 10px;
  }
- .hero-left{
+ .fitness-left{
      width: 50%;
      margin-top: 3rem;
  }
- .hero-left h1{
+ .fitness-left h1{
      font-size: 4rem;
      color: var(--text-color);
  }
- .hero-left p{
+ .fitness-left p{
      font-size: 16px;
      margin: 1rem 0;
      color: var(--paragraph-color);
  }
- .hero-text{
+ .fitness-text{
      font-family: "Dancing Script", cursive;
  }
  .join-btn{
@@ -114,11 +114,11 @@ header{
  }
  
  
- .hero-image-div{
+ .fitness-image-div{
      width: 50%;
      position: relative;
  }
- .hero-image-div img{
+ .fitness-image-div img{
  
      height: 470px;
      width: 300px;
@@ -130,7 +130,7 @@ header{
      align-items: center;
  }
  
- .card-1-hero{
+ .card-1-fitness{
      position: absolute;
      bottom: 25%;
      left: 2%;
@@ -155,7 +155,7 @@ header{
  .circle>i{
     display: none;
  }
- .card-2-hero{
+ .card-2-fitness{
      position: absolute;
      top: 18%;
      right: 10%;
@@ -165,11 +165,11 @@ header{
      border-radius: 10px;
      color: var(--text-color);
  }
- .card-2-hero >div p,.card-1-hero >div p{
+ .card-2-fitness >div p,.card-1-hero >div p{
     font-size: 13px;
     color: var(--paragraph-color);
  }
- .hero-tow-btn{
+ .fitness-tow-btn{
      display: flex;
     
  }
@@ -414,4 +414,316 @@ th,td{
    left: 0px;
    margin: 1rem;
 }
+
+/* footer  */
+
+footer{
+    background-color: #191919;
+}
+
+.main-div-footer{
+    width: 80%;
+    margin: 0 auto;
+}
+.div1-footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.right-div-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    gap: 14px;
+}
+.div1-footer h1{
+    margin: 1.5rem 0;
+    color: var(--text-color);
+}
+.div1-innerdiv-1{
+    width: 60%;
+    padding: 0.5rem 0;
+}
+.div1-innerdiv-1 h1{
+    font-size: 50px;
+    color: var(--button-color);
+}
+.div1-innerdiv-1 p{
+    font-size: 18px;
+    color: var(--paragraph-color);
+    padding-right:3rem ;
+}
+.div1-innerdiv-2 ul a li, .div1-innerdiv-3 ul a li{
+    color: var(--paragraph-color);
+    font-size: 20px;
+    margin: 1rem 0;
+}
+.line{
+    border: 1px solid #2f2f2f;
+    margin: 0.5rem 0;
+}
+.div2-footer{
+    color: var(--paragraph-color);
+    text-align: center;
+    font-size: 18px;
+    padding: 1rem 0;
+}
+/* Price */
+.price-container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #191919;
+    padding: 1rem;
+    border-radius: 20px;
+    
+}
+
+
+.header-price{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+.header-price p{
+    
+    margin: 0.7rem 0;
+   
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+
+.card{
+    height: auto;
+    background: linear-gradient(45deg, rgb(222, 249, 196) 0%, rgb(156, 219, 166) 25%, rgb(80, 180, 152) 75%,rgb(70, 133, 133)   100% );
+    color: var(--text-color);
+    padding: 1.5rem ;
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    
+}
+
+.card::after{
+    content: " ";
+    height:0px;
+    width: 0px;
+    background: linear-gradient(45deg, rgb(90, 99, 156) 0%, rgb(119, 118, 179) 25%, rgb(155, 134, 189) 75%,rgb(226, 187, 233) 100% );
+    top: 50%;
+    left: 45%;
+    position: absolute;
+    z-index: 5;
+    border-radius: 0;
+ }
+.card:hover::after{
+    top:0px;
+    left: 0px;
+    height:100%;
+    width: 100%;
+   transform: translateX();
+    transition:0.3s ease-in ;
+ }
+
+.card p{
+    color: white;
+    position: relative;
+    z-index:10;
+}
+.card h1,h3,span,hr,a>button{
+    z-index:10;
+    position: relative;
+    
+}
+
+.card span{
+    color: blanchedalmond;
+    position: relative;
+   
+}
+.card hr{
+    border: 1px solid blanchedalmond;
+    margin: 1rem 0;
+    position: relative;
+    
+}
+
+.card a button{
+    padding: 1rem 1.5rem;
+    background:linear-gradient(90deg, #009688 0%, #8BC34A 100%);
+    color: var(--text-color);
+    font-size: medium;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    
+}
+.card:hover a>button{
+    background:linear-gradient(45deg, rgb(226, 187, 233) 0%, rgb(119, 118, 179) 100%);
+    transition:0.3s ease-in-out ;
+}
+
+
+
+
+
+
+
+
+@media  (max-width: 576px) { 
+
+    h1, .Mile-Easily-header>h1, .BMI-Calculator-header h1,.card h1{
+        font-size: 30px;
+    }
+    .hero-left>h1{
+        font-size: 48px;
+    }
+    .card-2-hero >div p,.card-1-hero >div p{
+        font-size: 10px;
+        color: var(--paragraph-color);
+    }
+   .card-2-hero >div h1{
+        font-size: 30px;
+       
+    }
+    .navbar ,.hero-left , .hero-image-div,
+    .hero-main-container,.card-1,.your-habibt-header,
+    .Mile-Easily-header, .Mile-Easily-header button,.BMI-Calculator-header,
+    .Calculate-BMI, .BMI-Calculator-main, .team-header
+    {
+        width: 100%;
+        padding: 1rem 0.7rem;
+    }
+    .nav-div{
+        display: none;
+    }
+    .icon{
+        display: block;
+        color: var(--text-color);
+        
+    }
+    .fa-bars{
+        font-size: 30px;
+        
+    }
+    .hero-main-container , .habit-card ,.Extra-Mile-Easily, 
+    .BMI-Calculator-container>div , .right-div-footer, .div1-footer,.cards{
+        flex-direction: column;
+    }
+    .nav{
+        height: fit-content;
+    }
+    .hero-tow-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .join-btn{
+       font-size: 15px;
+       padding: 1rem 0.5rem;
+       width: 50%;
+       margin: 0;
+       
+    }
+    .app-btn{
+       font-size: 15px;
+       padding: 1rem 0.5rem;
+       width: 50%;
+       margin: 0;
+       
+    }
+    .card-1-hero{
+        position: absolute;
+        bottom: 40%;
+        left: 0%;
+        text-align: start;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(2px);
+        padding: 0.7rem;
+        border-radius: 10px;
+        color: var(--text-color);
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .circle{
+        display: flex;
+         justify-content: center;
+       align-items: center;
+    }
+    .circle i{
+       display: block;
+      
+      
+    }
+    .card-2-hero{
+        position: absolute;
+        top: 10%;
+        right: 0%;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(2px);
+        padding: 0.7rem;
+        border-radius: 10px;
+        color: var(--text-color);
+        
+    }
+    .card-2-hero h1,.card-1-hero h1 {
+        font-size: 18px;
+
+    }
+    .card-2-hero p ,.card-1-hero p{
+        font-size: 10px;
+
+    }
+    .Mile-Easily-imge-div img{
+        border-radius: 10px;
+    }
+    .input-div,.div1-innerdiv-1 p {
+        padding: 0;
+        text-align: justify;
+    }
+    .ours-team-members{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Extra-Mile-Easily, .team-main-container,.price-container{
+        width: 90%;
+    }
+    .Extra-Mile-Easily{
+        padding: 0.5rem;
+    }
+    .ours-team-members,.div1-innerdiv-1,.right-div-footer,
+    .ours-team-members div img, .header-price,.Mile-Easily-imge-div img, .hero-tow-btn{
+        width: 100%;
+    }
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
