@@ -185,7 +185,7 @@ header{
      color: var(--paragraph-color);
  }
  
- .your-habibt-header{
+ .your-habit-header{
      width: 50%;
      margin: 0 auto;
      text-align: center;
@@ -193,11 +193,11 @@ header{
      
      
  }
- .your-habibt-header p{
+ .your-habit-header p{
     margin: 1rem;
      
  }
- .your-habibt-header h1, .team-header h1{
+ .your-habit-header h1, .team-header h1{
     font-size: 40px;
     margin: 1rem 0;
      
@@ -234,10 +234,10 @@ header{
      justify-content: space-between;
      gap: 2rem;
  }
- .Mile-Easily-imge-div{
+ .Mile-Easily-image-div{
  
  }
- .Mile-Easily-imge-div img{
+ .Mile-Easily-image-div img{
      height: 250px;
      width: 350px;
      border-radius: 15px;
@@ -468,7 +468,7 @@ footer{
     font-size: 18px;
     padding: 1rem 0;
 }
-/* Price */
+/* Price *
 .price-container{
     width: 80%;
     margin: 0 auto;
@@ -569,6 +569,7 @@ footer{
     background:linear-gradient(45deg, rgb(226, 187, 233) 0%, rgb(119, 118, 179) 100%);
     transition:0.3s ease-in-out ;
 }
+    /*   */
 
 
 
@@ -620,7 +621,7 @@ footer{
     .nav{
         height: fit-content;
     }
-    .hero-tow-btn{
+    .fitness-tow-btn{
         display: flex;
         justify-content: center;
         align-items: center;
