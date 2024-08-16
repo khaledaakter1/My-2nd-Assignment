@@ -65,7 +65,7 @@ header{
      display: none;
  }
  
- /* hero section  */
+ /* fitness section  */
  
  .fitness-main-container{
      width: 80%;
@@ -415,6 +415,97 @@ th,td{
    margin: 1rem;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+/* We Provide You Best Service*/
+
+.service{
+    width: 1400px;
+    height: auto;
+    margin:100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 70px;
+}
+
+    
+.service-text{
+    max-width: 900px;
+    height: auto;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-content{
+    width: 100%;
+    height: 1000px;
+    display: grid;
+    gap: 40px;
+    grid-template-rows: repeat(1fr,4);
+}
+.service-content>div{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    padding-left: 20px;
+    background-color: rgba(128, 128, 128,50%);
+    display: grid;
+    gap: 5%;
+    grid-template-columns: 70% 25%;
+    align-items: center;
+}
+.service-content>div>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.boxing-img{
+    width: 100%;
+    height: 100%;
+    background:url(images/boxing.jpeg);
+    background-size: cover;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.bodybuilding-img{
+    width: 100%;
+    height: 100%;
+    background: url(images/bodybuilding.jpeg);
+    background-size: cover;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.stressing-img{
+    width: 100%;
+    height: 100%;
+    background: url(images/stressing.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;   
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.running-img{
+    width: 100%;
+    height: 100%;
+    background: url(images/running.jpeg);
+    background-size: cover;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
 /* footer  */
 
 footer{
@@ -471,26 +562,26 @@ footer{
 
 
 
-@media  (max-width: 576px) { 
+@media (max-width: 576px) { 
 
-    h1, .Mile-Easily-header>h1, .BMI-Calculator-header h1,.card h1{
+    h1, .Mile-Easily-header>h1, .BMI-Calculator-header h1, .card h1{
         font-size: 30px;
     }
-    .hero-left>h1{
+    .fitness-left>h1{
         font-size: 48px;
     }
-    .card-2-hero >div p,.card-1-hero >div p{
+    .card-2-fitness >div p,.card-1-fitness >div p{
         font-size: 10px;
         color: var(--paragraph-color);
     }
-   .card-2-hero >div h1{
+   .card-2-fitness >div h1{
         font-size: 30px;
        
     }
-    .navbar ,.hero-left , .hero-image-div,
-    .hero-main-container,.card-1,.your-habibt-header,
+    .navbar ,.fitness-left , .fitness-image-div,
+    .fitness-main-container,.card-1,.your-habit-header,
     .Mile-Easily-header, .Mile-Easily-header button,.BMI-Calculator-header,
-    .Calculate-BMI, .BMI-Calculator-main, .team-header
+    .Calculate-BMI, .BMI-Calculator-main, .team-header 
     {
         width: 100%;
         padding: 1rem 0.7rem;
@@ -507,7 +598,7 @@ footer{
         font-size: 30px;
         
     }
-    .hero-main-container , .habit-card ,.Extra-Mile-Easily, 
+    .fitness-main-container , .habit-card ,.Extra-Mile-Easily,
     .BMI-Calculator-container>div , .right-div-footer, .div1-footer,.cards{
         flex-direction: column;
     }
@@ -534,7 +625,7 @@ footer{
        margin: 0;
        
     }
-    .card-1-hero{
+    .card-1-fitness{
         position: absolute;
         bottom: 40%;
         left: 0%;
@@ -561,7 +652,7 @@ footer{
       
       
     }
-    .card-2-hero{
+    .card-2-fitness{
         position: absolute;
         top: 10%;
         right: 0%;
@@ -572,15 +663,15 @@ footer{
         color: var(--text-color);
         
     }
-    .card-2-hero h1,.card-1-hero h1 {
+    .card-2-fitness h1,.card-1-fitness h1 {
         font-size: 18px;
 
     }
-    .card-2-hero p ,.card-1-hero p{
+    .card-2-fitness p ,.card-1-fitness p{
         font-size: 10px;
 
     }
-    .Mile-Easily-imge-div img{
+    .Mile-Easily-image-div img{
         border-radius: 10px;
     }
     .input-div,.div1-innerdiv-1 p {
@@ -597,27 +688,80 @@ footer{
         padding: 0.5rem;
     }
     .ours-team-members,.div1-innerdiv-1,.right-div-footer,
-    .ours-team-members div img, .header-price,.Mile-Easily-imge-div img, .hero-tow-btn{
+    .ours-team-members div img, .header-price,.Mile-Easily-image-div img, .fitness-tow-btn{
         width: 100%;
     }
+    .service{
+        width: 90vw;
+        height: auto;
+        margin:100px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 70px;
+    }
+    .service-content{
+        width: 100%;
+        height: 1500px;
+        display: grid;
+        gap: 20px;
+        grid-template-rows: repeat(1fr,4);
+    }
+    .service-content>div{
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+        padding-left: 0;
+        background-color: rgba(128, 128, 128,50%);
+        display: flex;
+        gap: 5%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .service-content>div>div{
+        padding:0 10px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .boxing-img{
+        width: 100%;
+        height: 100%;
+        background:url(images/boxing.jpeg);
+        background-size: cover;
+        border-top-right-radius: 16px;
+        border-top-left-radius: 16px;
+        border-bottom-right-radius: 0;
+    }
+    .bodybuilding-img{
+        width: 100%;
+        height: 100%;
+        background: url(images/bodybuilding.jpeg);
+        background-size: cover;
+        border-top-right-radius: 16px;
+        border-top-left-radius: 16px;
+        border-bottom-right-radius: 0;
+    }
+    
+    .stressing-img{
+        width: 100%;
+        height: 100%;
+        background: url(images/stressing.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;   
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+    .running-img{
+        width: 100%;
+        height: 100%;
+        background: url(images/running.jpeg);
+        background-size: cover;
+        border-top-right-radius: 16px;
+        border-top-left-radius: 16px;
+        border-bottom-right-radius: 0;
+    }
+  
      
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
